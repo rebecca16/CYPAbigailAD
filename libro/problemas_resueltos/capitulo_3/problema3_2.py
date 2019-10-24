@@ -1,17 +1,16 @@
 # El programa imprime y suma los términos de una serie.
+BAND = 'T'
 SUMSER = 0
-I = 2
-BAND = str(input("Ingresa t o f: "))
-f = 0
-t = 0
-while(I <= 1800):
-    SUMSER = SUMSER + I
-    if BAND == f:
-        BAND == t
-        I = I + 3
+i = 2
+while(i <= 1800):
+    SUMSER = SUMSER + i
+    print(i)
+    if BAND == 'T':
+        BAND = 'F'
+        i = i + 3
     else:
-        BAND == t
-        I = I + 2
-        
-print(SUMSER)
-print("Fin del programa")
+        BAND = 'T'
+        i = i + 2
+else:
+    print(f"Los terminos en total de la serie son { SUMSER }")
+print("Fin del programa")    
